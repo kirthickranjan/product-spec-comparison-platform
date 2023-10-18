@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+
+<main id="main">
+
+  <!-- ======= Intro Single ======= -->
+  <section class="intro-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <div class="title-single-box">
+            <h1 class="title-single">Great Price Comparison</h1>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                About
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Intro Single-->
+
+  <!-- ======= About Section ======= -->
+  <section class="section-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 position-relative">
+          <div class="about-img-box">
+            <img src="{% static 'assets/img/slide-image-1.jpg' %}" width="100%" height="50%"alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-12 section-t8 position-relative">
+          <div class="row">
+            <div class="col-md-6 col-lg-5">
+              <img src="{% static 'assets/img/about-2.png' %}" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-5 section-md-t3">
+              <div class="title-box-d">
+                <h3 class="title-d">Price
+                  <span class="color-d">Comparison </span> Details
+                  <br> 
+                </h3>
+              </div>
+              <p class="color-text-a">
+                Price comparison is comparing the price of the same product in different outlets. Price levels are based on price comparisons with major competitors. Price comparison websites can take the hassle out of finding the best deal. Price comparison is comparing the price of the same product in different outlets.
+              </p>
+              <p class="color-text-a">
+                A comparison shopping website, sometimes called a price comparison website, price analysis tool, comparison shopping agent, shopbot, aggregator or comparison shopping engine, is a vertical search engine that shoppers use to filter and compare products based on price, features, reviews and other criteria
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+</main><!-- End #main -->
+{% include 'footer.html' %}
+{% endblock  %}  

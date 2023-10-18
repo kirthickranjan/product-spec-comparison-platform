@@ -1,0 +1,79 @@
+{% include 'base.html' %}
+{% load static %}
+{% block body %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<section class="section-services section-t8">
+    <div class="container"><br>
+    <h3>Add Products </h3><hr>
+    <div class="form">
+        <form class="form-a" action="" metthod="post" enctype="multipart/form-data">
+            {% csrf_token%}
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                      <label class="pb-2" for="Type">Product name</label>
+                      <input type="text" class="form-control form-control-a" placeholder="Product Name" name="product_name">
+                    </div>
+                </div> 
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                      <label class="pb-2" for="Type">Product Type</label>
+                      <input type="text" class="form-control form-control-a" placeholder="Product Type" name="product_type">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                        <label class="pb-2" for="Type">Product Image</label>
+                        <input type="file" class="form-control form-control-a" name="product_image">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container"><br>
+    <h3>Add Brand </h3><hr>
+    <div class="form">
+        <form class="form-a" action="" metthod="post" enctype="multipart/form-data">
+            {% csrf_token%}
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                      <label class="pb-2" for="Type">Brand name</label>
+                      <input type="text" class="form-control form-control-a" placeholder="Brand Name" name="brand_name">
+                    </div>
+                </div> 
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                      <label class="pb-2" for="Type">Product Type</label>
+                      <input type="text" class="form-control form-control-a" placeholder="Product Type" name="product_type">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                        <label class="pb-2" for="Type">Brand  Image</label>
+                        <input type="file" class="form-control form-control-a" name="brand_image">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+
+
+{% include 'footer.html' %}
+{% include 'tablecdn.html' %}
+{% endblock  %} 
